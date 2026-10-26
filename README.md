@@ -19,4 +19,4 @@ Upload the **contents** of this folder to the root of a public GitHub repository
 The hero has a two-line title, clean date/location rows, and a compact navigation bar. No registration, speakers, or venue-information sections are included.
 
 ## Updated hero image
-The locally hosted `assets/stockholm-decentralized-ai.png` is used as the hero background. Upload the `assets` folder along with the HTML and CSS files.
+The locally hosted `stockholm-decentralized-ai.png` is used as the hero background. Upload the `assets` folder along with the HTML and CSS files.
