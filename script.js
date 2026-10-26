@@ -1,7 +1,10 @@
-const $=id=>document.getElementById(id);
-const text=(id,value)=>{$(id).textContent=value};
-text('event-title',workshop.title);text('event-subtitle',workshop.subtitle);text('event-date',workshop.date);text('event-location',workshop.location);text('about-text',workshop.about);text('organizers-text',workshop.organizers);text('venue-text',workshop.venue);text('register-text',workshop.registration);text('footer-name',workshop.title);text('year',new Date().getFullYear());
-if(workshop.registrationUrl){$('register-link').href=workshop.registrationUrl;}else{$('register-link').removeAttribute('href');$('register-link').textContent='Registration link coming soon';}
-const agenda=$('agenda-list');workshop.agenda.forEach(item=>{const row=document.createElement('article');row.className='agenda-item'+(item.type==='Break'?' break':'');const time=document.createElement('time');time.textContent=item.time;const body=document.createElement('div');const h=document.createElement('h3');h.textContent=item.title;const p=document.createElement('p');p.textContent=item.detail;body.append(h,p);const type=document.createElement('span');type.className='session-type';type.textContent=item.type||'Session';row.append(time,body,type);agenda.append(row)});
-const grid=$('speaker-grid');workshop.speakers.forEach(person=>{const card=document.createElement('article');card.className='speaker-card';const portrait=document.createElement('div');portrait.className='portrait';if(person.photo){const img=document.createElement('img');img.src=person.photo;img.alt=`Portrait of ${person.name}`;img.loading='lazy';portrait.append(img)}else{const initials=document.createElement('span');initials.className='portrait-placeholder';initials.textContent=person.name.split(' ').map(s=>s[0]).slice(0,2).join('');portrait.append(initials)}const info=document.createElement('div');info.className='speaker-info';const h=document.createElement('h3');h.textContent=person.name;const affiliation=document.createElement('p');affiliation.className='affiliation';affiliation.textContent=person.affiliation;const topic=document.createElement('p');topic.textContent=person.topic;info.append(h,affiliation,topic);card.append(portrait,info);grid.append(card)});
-const menu=document.querySelector('.menu'),nav=$('nav');menu.addEventListener('click',()=>{const opened=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(opened))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
+const menu = document.querySelector('.menu');
+const nav = document.querySelector('#nav');
+menu.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  menu.setAttribute('aria-expanded', String(open));
+});
+nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+  nav.classList.remove('open');
+  menu.setAttribute('aria-expanded', 'false');
+}));
