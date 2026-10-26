@@ -14,3 +14,6 @@ Edit `index.html` to change descriptions, organizers, or the program. To change 
 
 ## Publish on GitHub Pages
 Upload the **contents** of this folder to the root of a public GitHub repository. Open **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/(root)`, and save. The published URL will be `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`.
+
+## Design update
+The hero has a two-line title, clean date/location rows, and a compact navigation bar. No registration, speakers, or venue-information sections are included.
