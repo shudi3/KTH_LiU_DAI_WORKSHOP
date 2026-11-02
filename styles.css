@@ -34,5 +34,5 @@
 .day-info .agenda-entry strong{display:inline;font-size:15px;line-height:1.45;font-weight:700;min-width:0}
 .day-info .agenda-entry p{margin:5px 0 0;color:var(--muted);opacity:1;font-size:14px;line-height:1.5}
 .day-info .agenda-group{font-size:20px;line-height:1.25;margin:24px 0 8px;color:var(--navy);font-weight:800}
-.day-info .agenda-break{background:rgba(240,192,52,.12);padding-left:10px;padding-right:10px}
+.day-info .agenda-break{background:#e8f3ff;padding-left:10px;padding-right:10px}
 @media(max-width:750px){.day-info .agenda-head{display:block}.day-info .agenda-time{display:block;margin-bottom:4px}}
