@@ -22,3 +22,12 @@
 .agenda-entry{display:grid;grid-template-columns:155px minmax(0,1fr);gap:1.5rem;padding:1.1rem .3rem;border-bottom:1px solid rgba(100,110,130,.2)}
 .agenda-time{font-weight:700;white-space:nowrap}.agenda-entry strong{display:block;line-height:1.45}.agenda-entry p{margin:.4rem 0 0;opacity:.75;line-height:1.5}.agenda-group{margin:1.8rem 0 .5rem;font-size:1.15rem;color:#2463a5}.agenda-break{background:rgba(240,192,52,.12);padding-left:.7rem;padding-right:.7rem}
 @media(max-width:600px){.agenda-entry{grid-template-columns:1fr;gap:.35rem}.agenda-time{font-size:.9rem}}
+
+/* Day 1 uses the same original date/card shell as Day 2. */
+.day-info .agenda-list{margin-top:14px}
+.day-info .agenda-entry{grid-template-columns:125px minmax(0,1fr);gap:1.15rem;padding:13px 5px}
+.day-info .agenda-entry p{margin:4px 0 0;color:var(--muted);opacity:1;font-size:14px}
+.day-info .agenda-entry strong{font-size:15px}
+.day-info .agenda-time{font-size:14px}
+.day-info .agenda-group{font-size:15px;margin:21px 0 3px;color:#3656c0}
+@media(max-width:750px){.day-info .agenda-entry{grid-template-columns:1fr;gap:4px}.day-info .agenda-time{white-space:normal}}
