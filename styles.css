@@ -43,15 +43,11 @@
 .day-info .agenda-head strong{display:inline;overflow-wrap:normal;word-break:normal;hyphens:none}
 @media(max-width:750px){.day-info .agenda-head{display:block}.day-info .agenda-head .agenda-time{display:inline;margin-bottom:0}}
 
-/* Session titles in navy; retain original Day 1 date panel and card. */
-.day-info .agenda-group{color:#112d51;font-size:22px;font-weight:800}
-.day-info .agenda-list{margin-top:0}
 
-/* Day 1: both session headings use the date-panel navy blue. */
-#agenda .day-card:first-child .day-info h4.agenda-group { color: #112d51 !important; }
-
-/* Match Day 1 session headings to the blue agenda heading shown in the reference. */
-#agenda .day-card:first-child .day-info h4.agenda-group { color: #4f68df !important; }
-
-/* All agenda session headers match the blue of the main Workshop agenda heading. */
-#agenda .day-card .day-info h4.agenda-group{color:#4769e7 !important;}
+/* Both days: session headings exactly match the blue “agenda.” title. */
+#agenda .day-card .day-info .agenda-group {
+  color: #4769e7 !important;
+  font-size: 22px;
+  font-weight: 800;
+}
+.day-info .agenda-list { margin-top: 0; }
