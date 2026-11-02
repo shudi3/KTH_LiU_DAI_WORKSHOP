@@ -36,3 +36,9 @@
 .day-info .agenda-group{font-size:20px;line-height:1.25;margin:24px 0 8px;color:var(--navy);font-weight:800}
 .day-info .agenda-break{background:#e8f3ff;padding-left:10px;padding-right:10px}
 @media(max-width:750px){.day-info .agenda-head{display:block}.day-info .agenda-time{display:block;margin-bottom:4px}}
+
+/* Time and title share one continuous line of text (wrapping naturally when needed). */
+.day-info .agenda-head{display:block}
+.day-info .agenda-head .agenda-time{display:inline;white-space:nowrap;margin-right:12px}
+.day-info .agenda-head strong{display:inline;overflow-wrap:normal;word-break:normal;hyphens:none}
+@media(max-width:750px){.day-info .agenda-head{display:block}.day-info .agenda-head .agenda-time{display:inline;margin-bottom:0}}
