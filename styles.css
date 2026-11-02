@@ -16,3 +16,9 @@
 .hero{background-position:center center;background-size:cover}
 .hero-shade{background:linear-gradient(90deg,rgba(7,24,48,.96) 0%,rgba(7,24,48,.89) 35%,rgba(7,24,48,.55) 65%,rgba(7,24,48,.22) 100%)}
 @media(max-width:750px){.hero{background-position:58% center}.hero-shade{background:linear-gradient(90deg,rgba(7,24,48,.94),rgba(7,24,48,.70))}}
+
+/* Day 1 agenda */
+.agenda-list{margin-top:1.4rem;border-top:1px solid rgba(100,110,130,.25)}
+.agenda-entry{display:grid;grid-template-columns:155px minmax(0,1fr);gap:1.5rem;padding:1.1rem .3rem;border-bottom:1px solid rgba(100,110,130,.2)}
+.agenda-time{font-weight:700;white-space:nowrap}.agenda-entry strong{display:block;line-height:1.45}.agenda-entry p{margin:.4rem 0 0;opacity:.75;line-height:1.5}.agenda-group{margin:1.8rem 0 .5rem;font-size:1.15rem;color:#2463a5}.agenda-break{background:rgba(240,192,52,.12);padding-left:.7rem;padding-right:.7rem}
+@media(max-width:600px){.agenda-entry{grid-template-columns:1fr;gap:.35rem}.agenda-time{font-size:.9rem}}
