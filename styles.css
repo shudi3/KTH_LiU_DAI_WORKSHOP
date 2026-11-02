@@ -42,3 +42,7 @@
 .day-info .agenda-head .agenda-time{display:inline;white-space:nowrap;margin-right:12px}
 .day-info .agenda-head strong{display:inline;overflow-wrap:normal;word-break:normal;hyphens:none}
 @media(max-width:750px){.day-info .agenda-head{display:block}.day-info .agenda-head .agenda-time{display:inline;margin-bottom:0}}
+
+/* Session titles in navy; retain original Day 1 date panel and card. */
+.day-info .agenda-group{color:#112d51;font-size:22px;font-weight:800}
+.day-info .agenda-list{margin-top:0}
