@@ -49,3 +49,6 @@
 
 /* Day 1: both session headings use the date-panel navy blue. */
 #agenda .day-card:first-child .day-info h4.agenda-group { color: #112d51 !important; }
+
+/* Match Day 1 session headings to the blue agenda heading shown in the reference. */
+#agenda .day-card:first-child .day-info h4.agenda-group { color: #4f68df !important; }
