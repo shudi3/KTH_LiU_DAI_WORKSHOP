@@ -52,3 +52,6 @@
 
 /* Match Day 1 session headings to the blue agenda heading shown in the reference. */
 #agenda .day-card:first-child .day-info h4.agenda-group { color: #4f68df !important; }
+
+/* All agenda session headers match the blue of the main Workshop agenda heading. */
+#agenda .day-card .day-info h4.agenda-group{color:#4769e7 !important;}
