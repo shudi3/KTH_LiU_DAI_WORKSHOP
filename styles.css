@@ -60,3 +60,8 @@
 
 /* Collaboration section heading */
 .collab-title{color:#3456bd;}
+
+/* Collaboration organizer names */
+.organizer-list .organizer-names{display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.organizer-list .organizer-names span{display:block}
+.organizer-list>div{align-items:flex-start}
