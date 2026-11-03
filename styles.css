@@ -132,3 +132,10 @@
 @media (min-width: 1250px) {
   #organizers .split { grid-template-columns: minmax(0, 455px) minmax(0, 1fr); gap: 20px; }
 }
+
+
+/* Collaboration final position adjustment */
+#organizers .split{grid-template-columns:0.92fr 1.08fr;gap:105px;}
+#organizers .organizer-list{margin-left:48px;}
+#organizers h2.collab-title{transform:translateY(-34px);}
+@media(max-width:750px){#organizers .organizer-list{margin-left:0;}#organizers h2.collab-title{transform:none;}}
