@@ -127,3 +127,8 @@
   #organizers .organizer-line { white-space: normal; overflow-wrap: normal; }
   #organizers .organizer-names .organizer-line { font-size: 16px; }
 }
+
+/* Shift collaboration institution labels and professor details right on desktop. */
+@media (min-width: 1250px) {
+  #organizers .split { grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: 20px; }
+}
