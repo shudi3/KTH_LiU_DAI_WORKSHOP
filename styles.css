@@ -56,3 +56,7 @@
 /* Small white tagline above hero title */
 .hero-tagline{margin:0 0 18px;color:#ffffff;font-size:13px;font-weight:800;letter-spacing:.22em;line-height:1.35;text-transform:uppercase;opacity:.98}
 @media(max-width:750px){.hero-tagline{font-size:11px;letter-spacing:.16em;margin-bottom:14px}}
+
+
+/* Collaboration section heading */
+.collab-title{color:#4769e7;}
