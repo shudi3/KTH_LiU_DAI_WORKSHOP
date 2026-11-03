@@ -75,3 +75,8 @@
 #organizers .organizer-list>div>strong{display:flex;align-items:center;justify-content:center;flex:0 0 90px;min-width:0}
 #organizers .organizer-names{flex:1;min-width:0}
 @media(max-width:750px){#organizers .split>div:first-child{justify-content:center}#organizers .organizer-list>div>strong{flex-basis:72px}}
+
+
+/* Final collaboration styling tweaks */
+#organizers h2.collab-title{color:#142741 !important;transform:translateY(-34px);}
+#organizers .organizer-names span{color:#142741;font-weight:700;}
