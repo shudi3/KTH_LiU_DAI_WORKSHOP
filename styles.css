@@ -80,3 +80,19 @@
 /* Final collaboration styling tweaks */
 #organizers h2.collab-title{color:#142741 !important;transform:translateY(-34px);}
 #organizers .organizer-names span{color:#142741;font-weight:700;}
+
+
+/* Collaboration: wider content area, inline departments */
+@media (min-width: 1000px) {
+  #organizers .split { grid-template-columns: minmax(0, 365px) minmax(0, 1fr); gap: 22px; }
+  #organizers .organizer-list>div { gap: 16px; }
+  #organizers .organizer-list>div>strong { flex-basis: 62px; }
+  #organizers .organizer-line { white-space: nowrap; }
+  #organizers .organizer-line, #organizers .organizer-line .prof-name, #organizers .organizer-line .prof-org { font-size: 14px; }
+}
+#organizers .organizer-names .organizer-line { display: block; line-height: 1.7; }
+#organizers .organizer-names .prof-name { display: inline; color: #142741; font-weight: 700; }
+#organizers .organizer-names .prof-org { display: inline; color: #142741; font-style: italic; font-weight: 700; }
+@media (max-width: 999px) {
+  #organizers .organizer-line { white-space: normal; overflow-wrap: anywhere; }
+}
