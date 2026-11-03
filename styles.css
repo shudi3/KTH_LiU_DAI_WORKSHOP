@@ -96,3 +96,34 @@
 @media (max-width: 999px) {
   #organizers .organizer-line { white-space: normal; overflow-wrap: anywhere; }
 }
+
+
+/* Balanced collaboration layout: closer columns and legible professor names */
+#organizers .split {
+  grid-template-columns: minmax(0, 350px) minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+}
+#organizers .split > div:first-child { justify-content: flex-start; }
+#organizers h2.collab-title { font-size: clamp(44px, 4vw, 58px); transform: translateY(-20px); text-align: left; }
+#organizers .organizer-list > div { gap: 14px; }
+#organizers .organizer-list > div > strong { flex: 0 0 62px; font-size: 26px; }
+#organizers .organizer-names { gap: 9px; }
+#organizers .organizer-names .organizer-line { font-size: 17px; line-height: 1.5; }
+#organizers .organizer-names .prof-name,
+#organizers .organizer-names .prof-org { font-size: inherit; color: #142741; font-weight: 700; }
+#organizers .organizer-names .prof-org { font-style: italic; }
+@media (min-width: 1250px) { #organizers .organizer-line { white-space: nowrap; } }
+@media (min-width: 751px) and (max-width: 1249px) {
+  #organizers .split { grid-template-columns: minmax(0, 34%) minmax(0, 1fr); gap: 18px; }
+  #organizers .organizer-line { white-space: normal; overflow-wrap: normal; }
+  #organizers .organizer-names .organizer-line { font-size: 16px; }
+  #organizers h2.collab-title { font-size: clamp(36px, 4.2vw, 52px); }
+}
+@media (max-width: 750px) {
+  #organizers .split { grid-template-columns: 1fr; gap: 28px; }
+  #organizers .split > div:first-child { justify-content: center; }
+  #organizers h2.collab-title { transform: none; text-align: center; font-size: clamp(36px, 8vw, 50px); }
+  #organizers .organizer-line { white-space: normal; overflow-wrap: normal; }
+  #organizers .organizer-names .organizer-line { font-size: 16px; }
+}
