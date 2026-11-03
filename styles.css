@@ -59,9 +59,19 @@
 
 
 /* Collaboration section heading */
-.collab-title{color:#3456bd;}
+#organizers h2.collab-title{color:#142741;}
 
 /* Collaboration organizer names */
 .organizer-list .organizer-names{display:flex;flex-direction:column;gap:4px;align-items:flex-start}
 .organizer-list .organizer-names span{display:block}
 .organizer-list>div{align-items:flex-start}
+
+
+/* Center collaboration heading and institution labels vertically. */
+#organizers .split{align-items:center}
+#organizers .split>div:first-child{display:flex;align-items:center;justify-content:center;min-width:0}
+#organizers h2.collab-title{color:#142741 !important;text-align:center;margin:0;text-transform:none}
+#organizers .organizer-list>div{align-items:center}
+#organizers .organizer-list>div>strong{display:flex;align-items:center;justify-content:center;flex:0 0 90px;min-width:0}
+#organizers .organizer-names{flex:1;min-width:0}
+@media(max-width:750px){#organizers .split>div:first-child{justify-content:center}#organizers .organizer-list>div>strong{flex-basis:72px}}
