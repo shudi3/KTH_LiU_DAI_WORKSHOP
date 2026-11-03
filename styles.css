@@ -130,20 +130,5 @@
 
 /* Shift collaboration institution labels and professor details right on desktop. */
 @media (min-width: 1250px) {
-  #organizers .split { grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: 20px; }
+  #organizers .split { grid-template-columns: minmax(0, 455px) minmax(0, 1fr); gap: 20px; }
 }
-
-
-/* Collaboration redesign — spacious, well-aligned institution panels */
-#organizers{background:#fff;padding:86px 0 96px;}
-#organizers .collaboration-layout{display:block;max-width:1160px;}
-#organizers h2.collab-title{display:block;color:#142741 !important;text-align:center !important;transform:none !important;font-size:clamp(40px,4.8vw,60px) !important;letter-spacing:-.045em;margin:0 0 44px !important;}
-#organizers .organizer-list{display:grid;gap:16px;width:100%;}
-#organizers .organizer-list>div{display:grid;grid-template-columns:110px minmax(0,1fr);align-items:center;gap:30px;padding:25px 34px;background:#f6f8fc;border:1px solid #e0e8f3;border-left:5px solid #4769e7;border-radius:9px;}
-#organizers .organizer-list>div>strong{display:block;min-width:0;flex:none;font-size:32px;line-height:1.2;font-weight:800;color:#3456bd;text-align:left;}
-#organizers .organizer-names{display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-width:0;}
-#organizers .organizer-names .organizer-line{display:block;font-size:17px !important;line-height:1.55;color:#142741;white-space:normal;overflow-wrap:normal;}
-#organizers .organizer-names .prof-name,#organizers .organizer-names .prof-org{display:inline;font-size:inherit !important;color:#142741;font-weight:700;}
-#organizers .organizer-names .prof-org{font-style:italic;}
-@media(min-width:1100px){#organizers .organizer-line{white-space:nowrap !important;}}
-@media(max-width:750px){#organizers{padding:65px 0 72px;}#organizers h2.collab-title{margin-bottom:28px !important;}#organizers .organizer-list>div{grid-template-columns:1fr;gap:14px;padding:21px 22px;}#organizers .organizer-list>div>strong{font-size:28px;}#organizers .organizer-names .organizer-line{font-size:16px !important;white-space:normal !important;}}
