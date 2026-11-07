@@ -145,3 +145,6 @@
 #organizers .organizer-names{margin-left:38px;}
 #organizers h2.collab-title{transform:translateY(-56px) !important;}
 @media(max-width:750px){#organizers .organizer-names{margin-left:0;}#organizers h2.collab-title{transform:none !important;}}
+
+/* IEEE Fellow distinctions in the Collaboration section */
+#organizers .ieee-fellow{font-style:italic;font-weight:700;color:#142741;}
