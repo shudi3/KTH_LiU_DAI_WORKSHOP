@@ -154,3 +154,6 @@
 #organizers .organizer-line .prof-name{color:#142741;font-weight:700;font-style:normal;}
 #organizers .organizer-line .ieee-fellow{color:#142741;font-weight:400;font-style:italic;}
 #organizers .organizer-line .prof-org{color:#142741;font-weight:400;font-style:normal;}
+
+/* Day 2 lunch, matching the existing simple agenda rows */
+.day-info .agenda-lunch{background:#f4f7fc;padding-left:10px;padding-right:10px;}
